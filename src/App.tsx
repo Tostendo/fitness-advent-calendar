@@ -10,7 +10,8 @@ function App() {
     <div className="App">
       <h1 className="headline">GET fit for Christmas!</h1>
       <p>Why not use the time before Christimas to get in shape? </p>
-      <p>Every day there is a challenge in here. It will not take you longer than a few minutes for most days. No equipment needed. Everything can be done at home.</p>
+      <p>Every day there is a challenge in here. You can "open" the door earliest on the particular day by clicking on it. </p>
+      <p>It will not take you longer than a few minutes for most days. No equipment needed. Everything can be done at home.</p>
       <div className="content">
         <Calendar entries={CALENDAR_DATA}/>
       </div>

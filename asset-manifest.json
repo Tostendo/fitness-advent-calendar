@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/fitness-advent-calendar/static/css/main.fe24cbf5.chunk.css",
-    "main.js": "/fitness-advent-calendar/static/js/main.403d30a7.chunk.js",
-    "main.js.map": "/fitness-advent-calendar/static/js/main.403d30a7.chunk.js.map",
-    "runtime-main.js": "/fitness-advent-calendar/static/js/runtime-main.517e7e43.js",
-    "runtime-main.js.map": "/fitness-advent-calendar/static/js/runtime-main.517e7e43.js.map",
-    "static/js/2.64542e30.chunk.js": "/fitness-advent-calendar/static/js/2.64542e30.chunk.js",
-    "static/js/2.64542e30.chunk.js.map": "/fitness-advent-calendar/static/js/2.64542e30.chunk.js.map",
-    "static/js/3.e72127b6.chunk.js": "/fitness-advent-calendar/static/js/3.e72127b6.chunk.js",
-    "static/js/3.e72127b6.chunk.js.map": "/fitness-advent-calendar/static/js/3.e72127b6.chunk.js.map",
+    "main.css": "/fitness-advent-calendar/static/css/main.04b91b04.chunk.css",
+    "main.js": "/fitness-advent-calendar/static/js/main.0a12a14a.chunk.js",
+    "main.js.map": "/fitness-advent-calendar/static/js/main.0a12a14a.chunk.js.map",
+    "runtime-main.js": "/fitness-advent-calendar/static/js/runtime-main.d173fc43.js",
+    "runtime-main.js.map": "/fitness-advent-calendar/static/js/runtime-main.d173fc43.js.map",
+    "static/js/2.946e82f4.chunk.js": "/fitness-advent-calendar/static/js/2.946e82f4.chunk.js",
+    "static/js/2.946e82f4.chunk.js.map": "/fitness-advent-calendar/static/js/2.946e82f4.chunk.js.map",
+    "static/js/3.a216c763.chunk.js": "/fitness-advent-calendar/static/js/3.a216c763.chunk.js",
+    "static/js/3.a216c763.chunk.js.map": "/fitness-advent-calendar/static/js/3.a216c763.chunk.js.map",
     "index.html": "/fitness-advent-calendar/index.html",
-    "static/css/main.fe24cbf5.chunk.css.map": "/fitness-advent-calendar/static/css/main.fe24cbf5.chunk.css.map",
-    "static/js/2.64542e30.chunk.js.LICENSE.txt": "/fitness-advent-calendar/static/js/2.64542e30.chunk.js.LICENSE.txt",
+    "static/css/main.04b91b04.chunk.css.map": "/fitness-advent-calendar/static/css/main.04b91b04.chunk.css.map",
+    "static/js/2.946e82f4.chunk.js.LICENSE.txt": "/fitness-advent-calendar/static/js/2.946e82f4.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/fitness-advent-calendar/static/media/background.e5bdc789.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.517e7e43.js",
-    "static/js/2.64542e30.chunk.js",
-    "static/css/main.fe24cbf5.chunk.css",
-    "static/js/main.403d30a7.chunk.js"
+    "static/js/runtime-main.d173fc43.js",
+    "static/js/2.946e82f4.chunk.js",
+    "static/css/main.04b91b04.chunk.css",
+    "static/js/main.0a12a14a.chunk.js"
   ]
 }

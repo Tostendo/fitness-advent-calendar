@@ -1,6 +1,6 @@
 {
-  "homepage": "/fitness-advent-calendar",
-  "name": "fitness-adventskalender",
+  "homepage": "https://tostendo.github.io/fitness-advent-calendar",
+  "name": "fitness-advent-calendar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

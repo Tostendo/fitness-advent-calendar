@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fitvent",
+  "name": "Get fit for christmas",
   "icons": [
     {
       "src": "favicon.ico",

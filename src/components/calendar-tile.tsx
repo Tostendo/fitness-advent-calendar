@@ -1,7 +1,7 @@
 import React from 'react';
 import './calendar-tile.scss';
 
-const IS_DEV = true;
+const IS_DEV = process.env.IS_DEV || false;
 
 type CalendarTileProps = {
     item: {

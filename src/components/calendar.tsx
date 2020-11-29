@@ -10,7 +10,7 @@ type CalendarProps = {
 
 const Calendar = (props: CalendarProps) => (
     <div className="calendar">
-        {props.entries.map((entry) => (<CalendarTile item={entry}/>))}
+        {props.entries.map((entry) => (<CalendarTile item={entry} key={entry.id}/>))}
     </div>
 )
 

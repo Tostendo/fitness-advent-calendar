@@ -44,13 +44,13 @@ class CalendarTile extends React.Component<CalendarTileProps, CalendarTileState>
             <div className="calendar-tile">
                 <div className={`calendar-card ${additionalClassName}`} onClick={() => this.onFlip()}>
                     <div className="card__face card__face--front">{item.title}</div>
-                    <div className="card__face card__face--back">
+                    {((item.validFrom && Date.parse(item.validFrom) < Date.now()) || IS_DEV) && <div className="card__face card__face--back">
                         <div className="explaination" dangerouslySetInnerHTML={{__html: item.description}}>
                         </div>
                         <div className="link-container">
                             {item.link && <a href={item.link} target="_blank" rel="noreferrer" className="link">Show exercise</a>}
                         </div>
-                    </div>
+                    </div>}
                 </div>
             </div>
         );

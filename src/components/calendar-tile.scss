@@ -1,0 +1,61 @@
+.calendar-tile {
+    display: flex;
+    font-size: 16px;
+    height: 180px;
+    margin: 5px;
+    cursor: pointer;
+
+    .calendar-card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+        .link-container {
+            padding-top: 5px;
+            font-size: 12px;
+
+            > a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: grey;
+                }
+            }
+        }
+
+        .card__face {
+            position: absolute;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            backface-visibility: hidden;
+        }
+        .card__face--front {
+            
+            padding-top: 5px;
+            background-color: #03472D;
+
+        }
+        .card__face--back {
+            padding: 5px;
+            background: white;
+            color: black;
+            font-weight: 600;
+            transform: rotateY( 180deg );
+
+            .small {
+                text-align: left;
+                font-size: 12px;
+            }
+        }  
+        &.is-flipped {
+            transform: rotateY(180deg);
+        }
+    }
+}

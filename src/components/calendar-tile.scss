@@ -1,7 +1,7 @@
 .calendar-tile {
     display: flex;
     font-size: 16px;
-    height: 180px;
+    height: 200px;
     margin: 5px;
     cursor: pointer;
 
@@ -11,6 +11,18 @@
         position: relative;
         transition: transform 1s;
         transform-style: preserve-3d;
+
+        .btn-default {
+            cursor: pointer;
+            color: black;
+            border-radius: 10px;
+            line-height: 20px;
+            border: none;
+            background-color: rgba(0,0,0,0.25);
+            &:hover {
+                background-color: rgba(0,0,0,0.4);
+            }
+        }
 
         .link-container {
             padding-top: 5px;
@@ -38,12 +50,10 @@
         }
         .card__face--front {
             font-size: 40px;
-            padding-top: 5px;
             background-color: #03472D;
 
         }
         .card__face--back {
-            padding: 5px;
             background: white;
             color: black;
             font-weight: 600;
@@ -51,7 +61,7 @@
 
             .small {
                 text-align: left;
-                font-size: 12px;
+                font-size: 11px;
             }
         }  
         &.is-flipped {

@@ -1,5 +1,13 @@
 import React from 'react';
 import './calendar-tile.scss';
+import axios from 'axios';
+import uniqid from 'uniqid';
+
+const SENTENCES = [
+    "Congrats my friend, well done! You're a machine!",
+    "Keep it up! Amazing!",
+    "I like your style. Go on.",
+];
 
 const IS_DEV = process.env.IS_DEV || false;
 
@@ -33,8 +41,24 @@ class CalendarTile extends React.Component<CalendarTileProps, CalendarTileState>
                 isFlipped: !this.state.isFlipped
             });   
         } else {
-            alert("Not yet my friend! Stay patient!");
+            alert("Door is not yet open my friend! Stay patient!");
         }
+    }
+
+    onDidIt(e: any) {
+        e.stopPropagation();
+        axios.post("https://advent-calendar-7daed.firebaseio.com/challenges.json", {
+            challengeId: this.props.item.id,
+            sessionId: uniqid()
+        }).then(() => {
+            const sentence = SENTENCES[Math.floor(Math.random() * SENTENCES.length)];
+            alert(sentence);
+            this.setState({
+                isFlipped: !this.state.isFlipped
+            });
+        }).catch(e => {
+            console.error("something went wrong: ", e);
+        });
     }
 
     render() {
@@ -50,6 +74,7 @@ class CalendarTile extends React.Component<CalendarTileProps, CalendarTileState>
                         <div className="link-container">
                             {item.link && <a href={item.link} target="_blank" rel="noreferrer" className="link">Show exercise</a>}
                         </div>
+                        <button className="btn-default" onClick={(e) => this.onDidIt(e)}>I did it!</button>
                     </div>}
                 </div>
             </div>

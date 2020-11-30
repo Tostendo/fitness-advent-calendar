@@ -11,6 +11,7 @@ export const CALENDAR_DATA = [
         "id": "2",
         "validFrom": "2020-12-02",
         "description": "2min hollow body hold.",
+        "social_description": "Write a hand-written letter to someone",
         "link": "https://www.youtube.com/watch?v=BQCdzRPE9Ao"
 
     },
@@ -27,6 +28,7 @@ export const CALENDAR_DATA = [
         "id": "4",
         "validFrom": "2020-12-04",
         "description": "4 min High plank hold.",
+        "social_description": "write a mail to yourself in the future (https://www.zukunftsmail.com/)",
         "link": "https://www.youtube.com/watch?v=fSaYfvSpAMI"
     },
     {
@@ -41,6 +43,7 @@ export const CALENDAR_DATA = [
         "id": "6",
         "validFrom": "2020-12-06",
         "description": "6min Lateral raise hold (weight is optional)",
+        "social_description": "Give 5€ to a charity of your choice",
         "link": "https://www.youtube.com/watch?v=CCBdyar4xbA"
     },
     {
@@ -61,6 +64,7 @@ export const CALENDAR_DATA = [
         "id": "9",
         "validFrom": "2020-12-09",
         "description": "9x9 Sit Ups = 81 Sit Ups over the day",
+        "social_description": "Make a list of the next five places you wanna go",
         "link": "https://fitwithfranzi.com/2020/10/26/frog-sit-up/"
     },
     {
@@ -75,6 +79,7 @@ export const CALENDAR_DATA = [
         "id": "11",
         "validFrom": "2020-12-11",
         "description": "11x11 = 121 Jumping Jacks over the day",
+        "social_description": "Make a list of all the cities you have been to 2020",
         "link": "https://fitwithfranzi.com/2020/06/19/jumping-jack-variations/"
     },
     {
@@ -95,6 +100,8 @@ export const CALENDAR_DATA = [
         "id": "14",
         "validFrom": "2020-12-14",
         "description": "14 Push ups with each 5 seconds hold on bottom, then push up again (video just shows hold)",
+        "social_description": "Give someone an honest compliment",
+
         "link": "https://www.youtube.com/watch?v=SrlvaIkryjs"
     },
     {
@@ -116,6 +123,7 @@ export const CALENDAR_DATA = [
         "id": "17",
         "validFrom": "2020-12-17",
         "description": "17 Push To Child",
+        "social_description": "Text someone you haven't talk to for a while",
         "link": "https://fitwithfranzi.com/2020/08/26/push-up-to-child/"
     },
     {
@@ -130,6 +138,7 @@ export const CALENDAR_DATA = [
         "id": "19",
         "validFrom": "2020-12-19",
         "description": "19 Squat Jumps",
+        "social_description": "Name 3 things you are grateful for in your life.",
         "link": "https://www.youtube.com/watch?v=72BSZupb-1I"
     },
     {
@@ -149,6 +158,7 @@ export const CALENDAR_DATA = [
         "title": "Day 22",
         "id": "22",
         "validFrom": "2020-12-22",
+        "social_description": "What were your personal TOP 3 highlights of 2020?",
         "description": "22 burpees (optional with push up)",
         "link": "https://www.youtube.com/watch?v=qLBImHhCXSw"
     },
@@ -156,6 +166,7 @@ export const CALENDAR_DATA = [
         "title": "Day 23",
         "id": "23",
         "validFrom": "2020-12-23",
+        "social_description": "Christmas dinner with friends: you have 5 seats. whom would you invite and why?",
         "description": "23x23 = 529. How many push ups can you do in 529 seconds? Set your counter and go! Each push up one point!",
     },
     {

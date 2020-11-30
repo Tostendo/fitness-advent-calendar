@@ -9,7 +9,7 @@ const SENTENCES = [
     "I like your style. Go on.",
 ];
 
-const IS_DEV = process.env.IS_DEV || false;
+const IS_DEV = false;
 
 type CalendarTileProps = {
     item: {
@@ -17,26 +17,30 @@ type CalendarTileProps = {
         id: string;
         validFrom: string;
         description: string;
+        social_description: string;
         link: string;
     }
 }
 
 type CalendarTileState = {
     isFlipped: boolean;
+    done: boolean;
 }
 
 class CalendarTile extends React.Component<CalendarTileProps, CalendarTileState> {
 
     constructor(props: CalendarTileProps) {
         super(props);
+        var tmp = new Date(this.props.item.validFrom);
         this.state = {
-            isFlipped: false
+            isFlipped: tmp.setDate(tmp.getDate() + 1) < Date.now(),
+            done: false,
         }
     }
 
     onFlip() {
         const { item } = this.props;
-        if ((item.validFrom && Date.parse(item.validFrom) < Date.now()) || IS_DEV) {
+        if ((Date.parse(item.validFrom) < Date.now()) || IS_DEV) {
             this.setState({
                 isFlipped: !this.state.isFlipped
             });   
@@ -47,15 +51,23 @@ class CalendarTile extends React.Component<CalendarTileProps, CalendarTileState>
 
     onDidIt(e: any) {
         e.stopPropagation();
+        var sessionId = uniqid();
+        const userInfo = localStorage.getItem("contextInfo");
+        if (userInfo) {
+            const parsed = JSON.parse(userInfo);
+            sessionId = parsed.sessionId;
+        }
         axios.post("https://advent-calendar-7daed.firebaseio.com/challenges.json", {
             challengeId: this.props.item.id,
-            sessionId: uniqid()
+            sessionId: sessionId,
+            timestamp: new Date().toUTCString()
         }).then(() => {
             const sentence = SENTENCES[Math.floor(Math.random() * SENTENCES.length)];
             alert(sentence);
             this.setState({
-                isFlipped: !this.state.isFlipped
+                done: true
             });
+            localStorage.setItem('contextInfo', JSON.stringify({sessionId: sessionId}));
         }).catch(e => {
             console.error("something went wrong: ", e);
         });
@@ -69,12 +81,17 @@ class CalendarTile extends React.Component<CalendarTileProps, CalendarTileState>
                 <div className={`calendar-card ${additionalClassName}`} onClick={() => this.onFlip()}>
                     <div className="card__face card__face--front">{item.id}</div>
                     {((item.validFrom && Date.parse(item.validFrom) < Date.now()) || IS_DEV) && <div className="card__face card__face--back">
-                        <div className="explaination" dangerouslySetInnerHTML={{__html: item.description}}>
+                        <div>
+                            <div className="explaination" dangerouslySetInnerHTML={{__html: item.description}}></div>
+                            <div className="link-container">
+                                {item.link && <a href={item.link} onClick={(e) => e.stopPropagation()} target="_blank" rel="noreferrer" className="link">Show exercise</a>}
+                            </div>
                         </div>
-                        <div className="link-container">
-                            {item.link && <a href={item.link} target="_blank" rel="noreferrer" className="link">Show exercise</a>}
-                        </div>
-                        <button className="btn-default" onClick={(e) => this.onDidIt(e)}>I did it!</button>
+                        {item.social_description && <div className="social">
+                            <div>INSPIRATION</div>
+                            <div>{item.social_description}</div>
+                        </div>}
+                        {<button disabled={this.state.done} className="btn-default" onClick={(e) => this.onDidIt(e)}>I did it!</button>}
                     </div>}
                 </div>
             </div>

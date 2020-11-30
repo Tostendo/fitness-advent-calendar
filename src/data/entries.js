@@ -3,8 +3,8 @@ export const CALENDAR_DATA = [
         "title": "Day 1",
         "id": "1",
         "validFrom": "2020-12-01",
-        "description": "1min low boat hold.",
-        "link": "https://fitwithfranzi.com/2020/10/26/low-boat-hold-with-extended-arms/"
+        "description": "1min high boat to low boat.",
+        "link": "https://fitwithfranzi.com/2020/10/26/low-boat-to-high-boat/"
     },
     {
         "title": "Day 2",
@@ -53,28 +53,28 @@ export const CALENDAR_DATA = [
         "title": "Day 8",
         "id": "8",
         "validFrom": "2020-12-08",
-        "description": "8x8 Push-Ups = 64 Push Ups",
+        "description": "8x8 Push-Ups = 64 Push Ups over the day",
         "link": "https://fitwithfranzi.com/2020/06/18/regular-push-up/"
     },
     {
         "title": "Day 9",
         "id": "9",
         "validFrom": "2020-12-09",
-        "description": "9x9 Sit Ups = 81 Sit Ups",
+        "description": "9x9 Sit Ups = 81 Sit Ups over the day",
         "link": "https://fitwithfranzi.com/2020/10/26/frog-sit-up/"
     },
     {
         "title": "Day 10",
         "id": "10",
         "validFrom": "2020-12-10",
-        "description": "10x10 = 100 Squats",
+        "description": "10x10 = 100 Squats over the day",
         "link": "https://www.youtube.com/watch?v=xqvCmoLULNY"
     },
     {
         "title": "Day 11",
         "id": "11",
         "validFrom": "2020-12-11",
-        "description": "11x11 = 121 Jumping Jacks",
+        "description": "11x11 = 121 Jumping Jacks over the day",
         "link": "https://fitwithfranzi.com/2020/06/19/jumping-jack-variations/"
     },
     {
@@ -136,7 +136,7 @@ export const CALENDAR_DATA = [
         "title": "Day 20",
         "id": "20",
         "validFrom": "2020-12-20",
-        "description": "20 low boat to high boat lifts",
+        "description": "20 low boat lifts",
         "link": "https://fitwithfranzi.com/2020/10/26/low-boat-lifts/"
     },
     {
@@ -156,7 +156,7 @@ export const CALENDAR_DATA = [
         "title": "Day 23",
         "id": "23",
         "validFrom": "2020-12-23",
-        "description": "23x23 = How many push ups can you do in 506 seconds? Set your counter and go! Each push up one point!",
+        "description": "23x23 = 529. How many push ups can you do in 529 seconds? Set your counter and go! Each push up one point!",
     },
     {
         "title": "Day 24",
